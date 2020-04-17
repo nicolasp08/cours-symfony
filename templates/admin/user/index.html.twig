@@ -34,7 +34,7 @@
                 <td><img src="{{user.picture}}" alt="" class="avatar avatar-micro"></td>
                 <td>{{user.introduction}}</td>
                 <td> {{user.description | raw}}</td>
-                <td><a href="{{path('admin_user_edit', {'id': user.id})}}" class="btn btn-primary"><i class="fas fa-edit"></i></a>
+                <td><a href="{{ path('admin_user_edit', {'id': user.id})}}" class="btn-btn-primary"><i class="fas fa-edit"></i></a></td>
             </tr>
             {% endfor %}
         </tbody>
