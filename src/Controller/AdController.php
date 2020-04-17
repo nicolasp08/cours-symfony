@@ -129,7 +129,7 @@ class AdController extends AbstractController
      * Permet de supprimer une annonce
      * 
      * @Route("/ads/{slug}/delete", name="ads_delete")
-     * @Security("is_granted('ROLE_USER') and user == ad.getAuthor()")
+     * @Security("is_granted('ROLE_USER') and user == ad.getAuthor()", message="Vous n'avez pas le droit d'accéder a cette ressource")
      * 
      * @param Ad $ad
      * @param EntityManagerInterface $manager
